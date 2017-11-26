@@ -1,0 +1,10 @@
+#harry
+80 10 10
+#oscar
+35 20 45
+#smith
+0 90 10
+#will
+20 5 75
+%%%%%
+will will smith give money to his son harry will

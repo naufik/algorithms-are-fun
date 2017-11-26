@@ -1,0 +1,16 @@
+#harry
+80 10 10
+#oscar
+35 20 45
+#smith
+0 90 10
+#will
+20 5 75
+#peter
+90 5 5
+#damn
+0 0 100
+#kate
+100 0 0
+%%%%%%%%%%
+will will smith win an oscar

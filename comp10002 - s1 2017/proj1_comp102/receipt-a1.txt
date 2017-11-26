@@ -1,0 +1,557 @@
+============================================
+vis/output.txt
+18:13:47_Tuesday_25_April_2017
+============================================
+
+Compiling with gcc -Wall -lm ... 
+assmt1.c: In function ‘stage_three’:
+assmt1.c:182: warning: unused variable ‘i’
+Compilation succeeded.
+============================================
+Test for input file: test0.in
+3
+2.3 300 20
+1.7 1000 16
+2.8 500 32
+2.1 750 16
+2.1 500 12
+1.2 600 10
+0.9 900 99 
+ 
+Expected results:                                                                 Your results:
+Stage 1                                                                           Stage 1
+==========                                                                        ==========
+Point 01: <2.30, 300.00, 20.00>                                                   Point 01: <2.30, 300.00, 20.00>
+
+Stage 2                                                                           Stage 2
+==========                                                                        ==========
+Point 01, sum of coordinates (/100):  3.22 |----                                  Point 01, sum of coordinates (/100):  3.22 |----
+Point 02, sum of coordinates (/100): 10.18 |---------+-                           Point 02, sum of coordinates (/100): 10.18 |---------+-
+Point 03, sum of coordinates (/100):  5.35 |------                                Point 03, sum of coordinates (/100):  5.35 |------
+Point 04, sum of coordinates (/100):  7.68 |--------                              Point 04, sum of coordinates (/100):  7.68 |--------
+Point 05, sum of coordinates (/100):  5.14 |------                                Point 05, sum of coordinates (/100):  5.14 |------
+Point 06, sum of coordinates (/100):  6.11 |-------                               Point 06, sum of coordinates (/100):  6.11 |-------
+Point 07, sum of coordinates (/100): 10.00 |---------+                            Point 07, sum of coordinates (/100): 10.00 |---------+
+
+Stage 3                                                                           Stage 3
+==========                                                                        ==========
+Total: 7 points                                                                   Total: 7 points
+Point of largest sum of coordinates: 02                                           Point of largest sum of coordinates: 02
+Largest sum of coordinates: 1017.70                                            |  Largest sum of coordinates: 1017.70 points
+
+Stage 4                                                                           Stage 4
+==========                                                                        ==========
+Skyline points:                                                                   Skyline points:
+Point 02: <1.70, 1000.00, 16.00>                                               |  Point 01: <2.30, 300.00, 20.00>
+Point 03: <2.80, 500.00, 32.00>                                                |  Point 05: <2.10, 500.00, 12.00>
+Point 04: <2.10, 750.00, 16.00>                                                |  Point 06: <1.20, 600.00, 10.00>
+Point 07: <0.90, 900.00, 99.00>                                                   Point 07: <0.90, 900.00, 99.00>
+
+Stage 5                                                                           Stage 5
+==========                                                                        ==========
+Sorted skyline points:                                                         <
+Point 03: <2.80, 500.00, 32.00>                                                <
+Number of points dominated: 2                                                  <
+Point 04: <2.10, 750.00, 16.00>                                                <
+Number of points dominated: 2                                                  <
+Point 02: <1.70, 1000.00, 16.00>                                               <
+Number of points dominated: 1                                                  <
+Point 07: <0.90, 900.00, 99.00>                                                <
+Number of points dominated: 0                                                  <
+ 
+Oops, your results seem to be INCORRECT.  :(
+ 
+============================================
+Test for input file: test1.in
+6
+23 27.77 27.84 27.48 27.58 368
+24 27.69 28.23 27.49 27.89 210
+25 27.8 28.13 27.705 27.9 312
+26 28.06 28.07 27.51 27.83 453
+27 26.63 27.32 26.31 26.61 545
+28 26.41 26.47 25.95 26.31 357
+29 26.29 26.98 26.21 26.82 319
+30 27.17 27.47 26.92 27.22 288
+31 27.07 27.2 26.8905 27.1 158
+32 27.5 27.75 27.31 27.4 336
+33 27.38 27.54 27.36 27.47 286
+34 27.59 27.71 27.33 27.46 895
+35 27.41 27.53 27.15 27.29 422
+36 27.68 27.73 27.47 27.59 770
+37 27.49 27.665 27.4 27.62 227
+38 27.42 27.49 26.94 27.21 306
+39 27.34 27.55 27.07 27.4 203 
+ 
+Expected results:                                                                 Your results:
+Stage 1                                                                           Stage 1
+==========                                                                        ==========
+Point 01: <23.00, 27.77, 27.84, 27.48, 27.58, 368.00>                             Point 01: <23.00, 27.77, 27.84, 27.48, 27.58, 368.00>
+
+Stage 2                                                                           Stage 2
+==========                                                                        ==========
+Point 01, sum of coordinates (/100):  5.02 |------                                Point 01, sum of coordinates (/100):  5.02 |------
+Point 02, sum of coordinates (/100):  3.45 |----                                  Point 02, sum of coordinates (/100):  3.45 |----
+Point 03, sum of coordinates (/100):  4.49 |-----                                 Point 03, sum of coordinates (/100):  4.49 |-----
+Point 04, sum of coordinates (/100):  5.90 |------                                Point 04, sum of coordinates (/100):  5.90 |------
+Point 05, sum of coordinates (/100):  6.79 |-------                               Point 05, sum of coordinates (/100):  6.79 |-------
+Point 06, sum of coordinates (/100):  4.90 |-----                                 Point 06, sum of coordinates (/100):  4.90 |-----
+Point 07, sum of coordinates (/100):  4.54 |-----                                 Point 07, sum of coordinates (/100):  4.54 |-----
+Point 08, sum of coordinates (/100):  4.27 |-----                                 Point 08, sum of coordinates (/100):  4.27 |-----
+Point 09, sum of coordinates (/100):  2.97 |---                                   Point 09, sum of coordinates (/100):  2.97 |---
+Point 10, sum of coordinates (/100):  4.78 |-----                                 Point 10, sum of coordinates (/100):  4.78 |-----
+Point 11, sum of coordinates (/100):  4.29 |-----                                 Point 11, sum of coordinates (/100):  4.29 |-----
+Point 12, sum of coordinates (/100): 10.39 |---------+-                           Point 12, sum of coordinates (/100): 10.39 |---------+-
+Point 13, sum of coordinates (/100):  5.66 |------                                Point 13, sum of coordinates (/100):  5.66 |------
+Point 14, sum of coordinates (/100):  9.16 |---------+                            Point 14, sum of coordinates (/100):  9.16 |---------+
+Point 15, sum of coordinates (/100):  3.74 |----                                  Point 15, sum of coordinates (/100):  3.74 |----
+Point 16, sum of coordinates (/100):  4.53 |-----                                 Point 16, sum of coordinates (/100):  4.53 |-----
+Point 17, sum of coordinates (/100):  3.51 |----                                  Point 17, sum of coordinates (/100):  3.51 |----
+
+Stage 3                                                                           Stage 3
+==========                                                                        ==========
+Total: 17 points                                                                  Total: 17 points
+Point of largest sum of coordinates: 12                                           Point of largest sum of coordinates: 12
+Largest sum of coordinates: 1039.09                                            |  Largest sum of coordinates: 1039.09 points
+
+Stage 4                                                                           Stage 4
+==========                                                                        ==========
+Skyline points:                                                                   Skyline points:
+                                                                               >  Point 01: <23.00, 27.77, 27.84, 27.48, 27.58, 368.00>
+Point 02: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>                             Point 02: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>
+Point 03: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>                             Point 03: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>
+Point 04: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>                          |  Point 05: <27.00, 26.63, 27.32, 26.31, 26.61, 545.00>
+Point 10: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>                          |  Point 06: <28.00, 26.41, 26.47, 25.95, 26.31, 357.00>
+Point 12: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>                          |  Point 07: <29.00, 26.29, 26.98, 26.21, 26.82, 319.00>
+Point 14: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>                          |  Point 08: <30.00, 27.17, 27.47, 26.92, 27.22, 288.00>
+Point 15: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>                          |  Point 09: <31.00, 27.07, 27.20, 26.89, 27.10, 158.00>
+Point 16: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>                          <
+Point 17: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>                          <
+
+Stage 5                                                                           Stage 5
+==========                                                                        ==========
+Sorted skyline points:                                                         <
+Point 14: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>                          <
+Number of points dominated: 7                                                  <
+Point 12: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>                          <
+Number of points dominated: 5                                                  <
+Point 10: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>                          <
+Number of points dominated: 3                                                  <
+Point 04: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>                          <
+Number of points dominated: 1                                                  <
+Point 15: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>                          <
+Number of points dominated: 1                                                  <
+Point 16: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>                          <
+Number of points dominated: 1                                                  <
+Point 17: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>                          <
+Number of points dominated: 1                                                  <
+Point 02: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>                          <
+Number of points dominated: 0                                                  <
+Point 03: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>                          <
+Number of points dominated: 0                                                  <
+ 
+Oops, your results seem to be INCORRECT.  :(
+ 
+============================================
+Test for input file: test2.in
+6
+631 54 93 856 255 156
+23 27.77 27.84 27.48 27.58 368
+24 27.69 28.23 27.49 27.89 210
+25 27.8 28.13 27.705 27.9 312
+26 28.06 28.07 27.51 27.83 453
+27 26.63 27.32 26.31 26.61 545
+28 26.41 26.47 25.95 26.31 357
+29 26.29 26.98 26.21 26.82 319
+30 27.17 27.47 26.92 27.22 288
+31 27.07 27.2 26.8905 27.1 158
+32 27.5 27.75 27.31 27.4 336
+33 27.38 27.54 27.36 27.47 286
+34 27.59 27.71 27.33 27.46 895
+35 27.41 27.53 27.15 27.29 422
+36 27.68 27.73 27.47 27.59 770
+37 27.49 27.665 27.4 27.62 227
+38 27.42 27.49 26.94 27.21 306
+39 27.34 27.55 27.07 27.4 203 
+ 
+Expected results:                                                                 Your results:
+Stage 1                                                                           Stage 1
+==========                                                                        ==========
+Point 01: <631.00, 54.00, 93.00, 856.00, 255.00, 156.00>                          Point 01: <631.00, 54.00, 93.00, 856.00, 255.00, 156.00>
+
+Stage 2                                                                           Stage 2
+==========                                                                        ==========
+Point 01, sum of coordinates (/100): 20.45 |---------+---------+-                 Point 01, sum of coordinates (/100): 20.45 |---------+---------+-
+Point 02, sum of coordinates (/100):  5.02 |------                                Point 02, sum of coordinates (/100):  5.02 |------
+Point 03, sum of coordinates (/100):  3.45 |----                                  Point 03, sum of coordinates (/100):  3.45 |----
+Point 04, sum of coordinates (/100):  4.49 |-----                                 Point 04, sum of coordinates (/100):  4.49 |-----
+Point 05, sum of coordinates (/100):  5.90 |------                                Point 05, sum of coordinates (/100):  5.90 |------
+Point 06, sum of coordinates (/100):  6.79 |-------                               Point 06, sum of coordinates (/100):  6.79 |-------
+Point 07, sum of coordinates (/100):  4.90 |-----                                 Point 07, sum of coordinates (/100):  4.90 |-----
+Point 08, sum of coordinates (/100):  4.54 |-----                                 Point 08, sum of coordinates (/100):  4.54 |-----
+Point 09, sum of coordinates (/100):  4.27 |-----                                 Point 09, sum of coordinates (/100):  4.27 |-----
+Point 10, sum of coordinates (/100):  2.97 |---                                   Point 10, sum of coordinates (/100):  2.97 |---
+Point 11, sum of coordinates (/100):  4.78 |-----                                 Point 11, sum of coordinates (/100):  4.78 |-----
+Point 12, sum of coordinates (/100):  4.29 |-----                                 Point 12, sum of coordinates (/100):  4.29 |-----
+Point 13, sum of coordinates (/100): 10.39 |---------+-                           Point 13, sum of coordinates (/100): 10.39 |---------+-
+Point 14, sum of coordinates (/100):  5.66 |------                                Point 14, sum of coordinates (/100):  5.66 |------
+Point 15, sum of coordinates (/100):  9.16 |---------+                            Point 15, sum of coordinates (/100):  9.16 |---------+
+Point 16, sum of coordinates (/100):  3.74 |----                                  Point 16, sum of coordinates (/100):  3.74 |----
+Point 17, sum of coordinates (/100):  4.53 |-----                                 Point 17, sum of coordinates (/100):  4.53 |-----
+Point 18, sum of coordinates (/100):  3.51 |----                                  Point 18, sum of coordinates (/100):  3.51 |----
+
+Stage 3                                                                           Stage 3
+==========                                                                        ==========
+Total: 18 points                                                                  Total: 18 points
+Point of largest sum of coordinates: 01                                           Point of largest sum of coordinates: 01
+Largest sum of coordinates: 2045.00                                            |  Largest sum of coordinates: 2045.00 points
+
+Stage 4                                                                           Stage 4
+==========                                                                        ==========
+Skyline points:                                                                   Skyline points:
+Point 01: <631.00, 54.00, 93.00, 856.00, 255.00, 156.00>                          Point 01: <631.00, 54.00, 93.00, 856.00, 255.00, 156.00>
+                                                                               >  Point 02: <23.00, 27.77, 27.84, 27.48, 27.58, 368.00>
+Point 03: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>                             Point 03: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>
+Point 04: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>                             Point 04: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>
+Point 05: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>                          |  Point 06: <27.00, 26.63, 27.32, 26.31, 26.61, 545.00>
+Point 11: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>                          |  Point 07: <28.00, 26.41, 26.47, 25.95, 26.31, 357.00>
+Point 13: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>                          |  Point 08: <29.00, 26.29, 26.98, 26.21, 26.82, 319.00>
+Point 15: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>                          |  Point 09: <30.00, 27.17, 27.47, 26.92, 27.22, 288.00>
+Point 16: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>                          |  Point 10: <31.00, 27.07, 27.20, 26.89, 27.10, 158.00>
+Point 17: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>                          <
+Point 18: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>                          <
+
+Stage 5                                                                           Stage 5
+==========                                                                        ==========
+Sorted skyline points:                                                         <
+Point 15: <36.00, 27.68, 27.73, 27.47, 27.59, 770.00>                          <
+Number of points dominated: 7                                                  <
+Point 13: <34.00, 27.59, 27.71, 27.33, 27.46, 895.00>                          <
+Number of points dominated: 5                                                  <
+Point 11: <32.00, 27.50, 27.75, 27.31, 27.40, 336.00>                          <
+Number of points dominated: 3                                                  <
+Point 05: <26.00, 28.06, 28.07, 27.51, 27.83, 453.00>                          <
+Number of points dominated: 1                                                  <
+Point 16: <37.00, 27.49, 27.66, 27.40, 27.62, 227.00>                          <
+Number of points dominated: 1                                                  <
+Point 17: <38.00, 27.42, 27.49, 26.94, 27.21, 306.00>                          <
+Number of points dominated: 1                                                  <
+Point 18: <39.00, 27.34, 27.55, 27.07, 27.40, 203.00>                          <
+Number of points dominated: 1                                                  <
+Point 01: <631.00, 54.00, 93.00, 856.00, 255.00, 156.00>                       <
+Number of points dominated: 0                                                  <
+Point 03: <24.00, 27.69, 28.23, 27.49, 27.89, 210.00>                          <
+Number of points dominated: 0                                                  <
+Point 04: <25.00, 27.80, 28.13, 27.70, 27.90, 312.00>                          <
+Number of points dominated: 0                                                  <
+ 
+Oops, your results seem to be INCORRECT.  :(
+ 
+============================================
+src/assmt1.c
+18:13:47_Tuesday_25_April_2017
+============================================
+/* 
+	COMP10002 - FOUNDATIONS OF FUN
+	ASSESSMENT 1
+	Author: Naufal Fikri Setiawan (nsetiawan@student.unimelb.edu.au)
+	Student Number: 844027
+
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+#define DIV "==========" /* stage header */
+/* stage numbers */
+#define STAGE_NUM_ONE 1 
+#define STAGE_NUM_TWO 2
+#define STAGE_NUM_THREE 3
+#define STAGE_NUM_FOUR 4
+#define STAGE_NUM_FIVE 5
+
+#define READ_OK 1 /* reading point succeeded */
+#define READ_FAILED 0 /* reading point failed */
+
+#define MAX_NUM_POINTS 99 /* maximum number of points */
+#define MAX_NUM_DIMENSIONS 10 /* maximum number of dimensions */
+
+/* my own constants */
+#define SCALE_FACTOR 0.01
+
+typedef double point_t[MAX_NUM_DIMENSIONS];
+
+/* function prototypes */
+void stage_one(point_t one_point, int *num_points, int num_dimensions);
+void stage_two(point_t points[], int *num_points, int num_dimensions, 
+	double *coordinate_sums);
+void stage_three(double *coordinate_sums, int num_points);
+void stage_four(point_t points[], int num_points, int num_dimensions);
+void stage_five(point_t points[], int num_points, int num_dimensions);
+
+void print_stage_heading(int stage);
+int read_one_point(point_t one_point, int num_dimensions);
+
+/* add your own function prototypes here */
+double max_coordinate_sums(double *coordinate_sums, int num_points);
+double sum_point(point_t point, int num_dimensions);
+void point_copy(point_t src, point_t dest, int num_dimensions);
+int max_index(double *coordinate_sums, int num_points);
+int skyline(int index, point_t points[], int num_points, int num_dimensions);
+void
+output_point(point_t point, int num_dimensions);
+
+
+/* main program binds it all together */
+int
+main(int argc, char *argv[]) {
+
+	/* storage for the input data */
+	int num_dimensions;
+	point_t points[MAX_NUM_POINTS];
+	
+	/* storage for statistics */
+	int num_points = 0; /* number of points read in */
+	double coordinate_sums[MAX_NUM_POINTS]; /* coordinate sums of the points */
+	
+	/* read the first line - number of dimensions */
+	scanf("%d", &num_dimensions);
+	
+	/* stage 1 */
+	stage_one(points[0], &num_points, num_dimensions);
+
+	/* stage 2 */
+	stage_two(points, &num_points, num_dimensions, 
+		coordinate_sums);
+	
+
+	/* stage 3 */
+	stage_three(coordinate_sums, num_points);
+
+	/* stage 4 */
+	stage_four(points, num_points, num_dimensions);
+
+	/* stage 5 */
+	stage_five(points, num_points, num_dimensions);
+	
+	/* and done! */
+	return 0;
+}
+
+/* print out a stage heading, with a prior blank line once the stage number
+   goes plus one 
+*/
+void 
+print_stage_heading(int stage) {
+	/* main job is to print the stage number passed as an argument */
+	if (stage > STAGE_NUM_ONE) {
+		/* separate the stages */
+		printf("\n");
+	}
+	printf("Stage %d\n%s\n", stage, DIV);
+}
+
+/* read the coordinates of one point, store them in one_point
+*/
+int 
+read_one_point(point_t one_point, int num_dimensions) {
+	int i = 0;
+	
+	/* keep reading until num_dimensions numbers have been obtained */
+	while (i < num_dimensions) {
+		if (scanf("%lf", one_point+i) != 1) {
+			return READ_FAILED;
+		}
+		i++;
+	}
+	
+	return READ_OK;
+}
+
+/* stage 1 - read in and print one point
+*/
+void 
+stage_one(point_t one_point, int *num_points, int num_dimensions) {
+	/* print stage heading for stage 1 */
+	print_stage_heading(STAGE_NUM_ONE);
+	
+	/* add your code here for stage 1 */
+	read_one_point(one_point, num_dimensions);
+
+	printf("Point 01: ");
+	output_point(one_point, num_dimensions);
+
+	(*num_points)++;
+
+
+}
+
+/* stage 2 - read in the rest of the points and visualise them
+*/
+void 
+stage_two(point_t points[], int *num_points, int num_dimensions, 
+	double *coordinate_sums) {
+	/* print stage heading for stage 2 */
+	print_stage_heading(STAGE_NUM_TWO);
+	
+	point_t one_point;
+	/* add your code here for stage 2 */
+	
+	/* copies each of the input lines (if they exist) to an array of points*/
+	while (read_one_point(one_point, num_dimensions)) {
+		point_copy(one_point, points[(*num_points)++], num_dimensions);
+	}
+
+
+	int i;
+	for (i = 0; i < *num_points; i++) {
+
+		double sum = sum_point(points[i],num_dimensions);
+		coordinate_sums[i] = sum;
+		double displayed_sum = sum*SCALE_FACTOR;
+
+		
+		printf("Point %02d, sum of coordinates (/100): %5.2f |", i + 1, displayed_sum);
+
+
+		/*	Prints the tower */
+		int j;
+		for (j = 1; j <= (int)ceil(displayed_sum); j++) {
+			printf("%c", j % 10 == 0 ? '+' : '-');
+		}
+		printf("\n");
+	}
+}
+
+/* stage 3 - print statistics
+*/
+void 
+stage_three(double *coordinate_sums, int num_points) {
+	/* print stage heading for stage 3 */
+	print_stage_heading(STAGE_NUM_THREE);
+	
+	/* add your code here for stage 3 */
+	int i;
+	int max_pos = max_index(coordinate_sums, num_points);
+	double maxsum = coordinate_sums[max_pos];
+	printf("Total: %d points\n", num_points);
+	printf("Point of largest sum of coordinates: %02d\n", max_pos + 1);
+	printf("Largest sum of coordinates: %5.2f points\n", maxsum);
+
+}
+
+/* stage 4 - find and print the skyline points
+*/
+void 
+stage_four(point_t points[], int num_points, int num_dimensions) {
+	/* print stage heading for stage 4 */
+	print_stage_heading(STAGE_NUM_FOUR);
+	
+	int i;
+	printf("Skyline points:\n");
+	for (i = 0; i < num_points; i++) {
+		if (skyline(i,points,num_points,num_dimensions)) {
+			printf("Point %02d: ", i + 1);
+			output_point(points[i], num_dimensions);
+		}
+	}
+	/* add your code here for stage 4 */
+
+}
+
+/* stage 5 - sort and print the skyline points by the number of points 
+   they dominate
+*/
+void 
+stage_five(point_t points[], int num_points, int num_dimensions) {
+	/* print stage heading for stage 5 */
+	print_stage_heading(STAGE_NUM_FIVE);
+	
+	/* add your code here for stage 5 */
+
+}
+
+
+/* custom functions */
+double
+sum_point(point_t one_point, int num_dimensions) {
+	double total = 0;
+	int i;
+	for (i = 0; i < num_dimensions; i++) {
+		total += one_point[i];
+	} 
+	return total;
+}
+
+void
+point_copy(point_t src, point_t dest, int num_dimensions) {
+	int i;
+	for (i = 0; i < num_dimensions; i++) {
+		dest[i] = src[i];
+	}
+}
+
+int
+max_index(double *coordinate_sums, int num_points) {
+	double max = 0;
+	int index = 0;
+	int i;
+	for (i = 0; i < num_points; i++) {
+		if (coordinate_sums[i] > max) {
+			max = coordinate_sums[i];
+			index = i;
+		}
+	}
+	return index;
+}
+
+double
+max_value(double *coordinate_sums, int num_points) {
+	double max = 0;
+	int i;
+	for (i = 0; i < num_points; i++) {
+		if (coordinate_sums[i] > max) {
+			max = coordinate_sums[i];
+		}
+	}
+	return max;	
+}
+
+int
+check_domination(point_t one_point, point_t opposing_point, int num_dimensions) {
+	int i;
+	for(i = 0; i < num_dimensions; i++) {
+		if (opposing_point[i] <= one_point[i]) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+int
+skyline(int index, point_t points[], int num_points, int num_dimensions) {
+	int i;
+	for (i = 0; i < num_points; i++) {
+		if (index == i) {
+			continue;
+		}
+		int dominated;
+		dominated = check_domination(points[i], points[index], num_dimensions);
+
+		if (dominated) {
+			return 0;
+		}
+	}
+	return 1;
+}
+
+void
+output_point(point_t point, int num_dimensions) {
+	int i;
+	for (i = 0; i < num_dimensions; i++) {
+		printf(i == 0 ? "<" : " ");
+		printf("%.2f", point[i]);
+		printf(i == num_dimensions - 1 ? ">" : ",");
+	}
+	printf("\n");
+}

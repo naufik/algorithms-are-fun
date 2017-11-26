@@ -1,0 +1,40 @@
+=========================Stage 1=========================
+7Word 0: hewitt
+Label probabilities: 5% 95% 0%
+
+=========================Stage 2=========================
+5861075Number of words: 7
+Average number of characters per word: 6.86
+
+=========================Stage 3=========================
+hugh
+jackman
+is
+retiring
+the
+wolverine
+character
+after
+logan
+
+=========================Stage 4=========================
+hugh                            NOT_NAME
+jackman                         NOT_NAME
+is                              NOT_NAME
+retiring                        NOT_NAME
+the                             NOT_NAME
+wolverine                       NOT_NAME
+character                       NOT_NAME
+after                           NOT_NAME
+logan                           NOT_NAME
+
+=========================Stage 5=========================
+hugh                            NOT_NAME
+jackman                         NOT_NAME
+is                              NOT_NAME
+retiring                        NOT_NAME
+the                             NOT_NAME
+wolverine                       NOT_NAME
+character                       NOT_NAME
+after                           NOT_NAME
+logan                           NOT_NAME
