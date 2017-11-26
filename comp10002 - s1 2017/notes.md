@@ -1,7 +1,6 @@
 # COMP10002 -  Foundations of Algorithms
 
 Semester 1, 2017
-**Lecturer**: Jianzhong Qi  - jianzhong.qi@unimelb.edu.au
 
 ## Introduction to C Programming
 
