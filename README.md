@@ -1,6 +1,6 @@
 # Algorithms are Fun
 
-Free (my) resources for any unimelb classes that teach algorithms and the C language (COMP10002, COMP20007, and COMP20003 in the future).
+Free (my) resources for any unimelb classes that teach algorithms and the C language (COMP10002, COMP20007, and COMP30023 in the future).
 
 ## Please Note:
 
