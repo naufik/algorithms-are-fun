@@ -52,5 +52,23 @@ Used in:
 - Traffic light timing systems.
 - Timetabling.
 - Room bookings.
+- Protein-with-protein interaction
+
+## Graph Impementation in C
+
+### Structure
+
+**Nodes** are represented as a multi-'vector' `{v,p[]}` where:
+
+- `v`: is the value of the node.
+- `p[]`: an array to pointers of the edges connected to this node.
+
+**Edges** (assuming that it is directed) are represented as a `struct` containing two pointers:
+
+- `node`: pointer to the node that it connects to node.
+
+In this representation:
+
+- **Undirected edges** are represented by having two edges, one connecting from `A` to `B` and the other connecting from `B` to `A`.
 
 
