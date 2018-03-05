@@ -98,3 +98,8 @@ We are often interested only the big-O time of the worst case scenario, or the a
 - Quicksort has worst case time $O(n^2)$, but the cases are really rare, the average case is $O(n\log{n})$.
 - Hashing has worst case $O(n)$, but most hash functions are well designed so the *likely* worst case and the average case is $O(1)$.
 
+### Coding Practice
+
+- Do not spend too much time shaving down constants.
+- Always do optimization **in respect to big-O notation**.
+- Careless algorithms can run a really, really long time (like **5 years**).
