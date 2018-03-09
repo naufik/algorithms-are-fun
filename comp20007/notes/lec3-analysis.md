@@ -68,7 +68,7 @@ $$
 
 ### Analysis Shorthands
 
-- $a<b \implies n^a \in O(n^b)$
+- $a \leq b \implies n^a \in O(n^b)$
 
 ### Little-O Notation
 

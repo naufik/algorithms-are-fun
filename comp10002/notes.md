@@ -1480,4 +1480,3 @@ S(n) = \sum_{k=1}^{n}\frac{1}{k}
 $$
 
 Note that this sum is **mathematically divergent**, meaning that as $n$ gets arbitrarily large, $S(n)$ will get arbitrarily large as well and grow without bounds. However, if we were to simulate this behavior in a computer. The results may seem different, as after a specific value of $n$, $$\frac{1}{n}$$ gets treated as if it is $=0$. This means that we can find an $n$ such that $S(n) = S(n+1) = S(n+2) = \cdots$, as the computer stops adding.
-

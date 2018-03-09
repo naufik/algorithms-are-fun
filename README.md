@@ -2,6 +2,10 @@
 
 Free (my) resources for any unimelb classes that teach algorithms and the C language (COMP10002, COMP20007, and COMP30023 in the future).
 
+GitHub's markdown renderer does not render MathJax/LaTeX properly, most of the notes were made using the note-taking application [Typora](http://typora.io). I am trying to find an alternative note-taking application (with Markdown and LaTeX support) as Typora will no longer be free in the future.
+
+Hit me up if you know any.
+
 ## Please Note:
 
 - The accuracy of the resources are not guaranteed, since things may change over time.
