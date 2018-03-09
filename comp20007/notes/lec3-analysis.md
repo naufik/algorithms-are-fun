@@ -68,7 +68,7 @@ $$
 
 ### Analysis Shorthands
 
-- $a \leq b \implies n^a \in O(n^b)$
+- $a \lt b \implies n^a \in O(n^b)$
 
 ### Little-O Notation
 
@@ -103,3 +103,44 @@ We are often interested only the big-O time of the worst case scenario, or the a
 - Do not spend too much time shaving down constants.
 - Always do optimization **in respect to big-O notation**.
 - Careless algorithms can run a really, really long time (like **5 years**).
+
+## Divide and Conquer
+
+Solving a problem with a large amount of data by:
+
+- Dividing into smaller pieces.
+- Solve the **same** problem on each piece.
+- Combine into a solution to the whole data.
+
+We always have a special case for when the input is **tiny**. (e.g. special case of unit or empty arrays in quicksort).
+
+### Induction
+
+Complexity of recursive algorithms can often be shown via induction.
+
+**Principle**:
+
+If we can prove:
+
+- The base case (i.e. $P(0)$ or $P(1)$), **and**
+- For a general $k$, if $P(k)$ is true then $P(k+1)$ is true.
+
+Therefore we can conclude that the proposition $P$ is true for all integers starting at the base case (or natural numbers).
+
+A variation of the induction is called **strong induction**, the difference being:
+
+- Instead of making the assumption $P(k)$ is true, we assume $P(n)$ is true for all $n \leq k$ to prove $P(k)$.
+
+## The Master Theorem
+
+The Master Theorem describes the time complexity for **any** algorithm which has the time function as follows:
+
+$$
+T(n) = aT(\frac{n}{b}) + O(n^c)
+$$
+
+Then we can conclude that:
+
+$$
+T(n) \in \left\{\array{O(n^d) & d \gt \log_b{a} \\ O(n^d\log{n}) & d = \log_b{a} \\ O(n^{\log_b{a}}) & d \lt \log_b{a} }\right.
+$$
