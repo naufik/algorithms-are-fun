@@ -33,7 +33,9 @@ Order only cares about the function when the input `n` grows in size / approache
 When talking about order, we neglect:
 
 - Constants
-  $O(3000n^2)$ is treated the same as $O(0.020n^2)$
+  $O(3000n^2)$ is treated the same as $O(0.020n^2)$.
+
+  We simply say $O(n)$.
 
 - Logarithmic bases (for the same reason as constants).
 
@@ -49,7 +51,7 @@ Standard notation to describe the **growth** of functions.
 
 It is defined formally in mathematics as:
 $$
-g(n) \in O(f(n)) \iff \forall{n}\in\mathbb{N}\exists{c}\in\mathbb{R}^+: c\cdot f(n)
+g(n) \in O(f(n)) \iff \forall{n}\in\mathbb{\mathbb{N}}, \exists{c}\in\mathbb{R}^+: c\cdot f(n)
 $$
 
 - $g(n)$ is of order $f(n)$ **iff**  $g(n)$ is less than a multiple for $f(n)$ for all n.
@@ -69,6 +71,12 @@ $$
 ### Analysis Shorthands
 
 - $a \lt b \implies n^a \in O(n^b)$
+
+We can compare the order of two functions $f, g$ by performing the following limit comparison:
+$$
+L(x) = \lim_{n \to \infty} \frac{f(x)}{g(x)} = \left\{\array{0 & f < g \\ c & f = g \\ \infty & f > g}\right.
+$$
+
 
 ### Little-O Notation
 
