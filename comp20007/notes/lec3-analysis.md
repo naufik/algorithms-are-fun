@@ -144,7 +144,7 @@ A variation of the induction is called **strong induction**, the difference bein
 The Master Theorem describes the time complexity for **any** algorithm which has the time function as follows:
 
 $$
-T(n) = aT(\frac{n}{b}) + O(n^c)
+T(n) = aT(\frac{n}{b}) + O(n^d)
 $$
 
 Then we can conclude that:
