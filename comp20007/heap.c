@@ -31,17 +31,6 @@ void heap_insert(Heap *h, float key, int data) {
   h->items[h->length].key = key;
   h->items[h->length].data = data;
 
-  // Performing 'sift-up'
-  int i = h->length;
-  while (i > 0 && h->items[(i-1)/2].key > h->items[i].key) {
-    
-    HeapItem swap = h->items[(i-1)/2];
-    h->items[(i-1)/2] = h->items[i];
-    h->items[i] = swap;
-
-    i = (i-1)/2;
-  }
-
   h->length += 1;
 }
 
@@ -54,7 +43,7 @@ int heap_pop_min(Heap *h) {
   h->length -= 1;
   h->items[0] = h->items[h->length];
 
-  min_heapify(h, 0);
+  sift_down(h, 0);
   return item;
 }
 
@@ -79,7 +68,7 @@ void free_heap(Heap *h) {
 // Helper function to fix the heap so it maintains the heap property.
 // Modified implementation from "Introduction to Algorithms" by
 // Cormen, Leiserson, Rivest, Stein (CLRS).
-void min_heapify(Heap *h, int i) {
+void sift_down(Heap *h, int i) {
   int left = 2*i + 1;
   int right = left + 1;
   int min = i;
@@ -97,6 +86,19 @@ void min_heapify(Heap *h, int i) {
     h->items[i] = h->items[min];
     h->items[min] = swap;
 
-    min_heapify(h, min);
+    sift_down(h, min);
+  }
+}
+
+// Fix heap
+void sift_up(Heap *h, int i) {
+
+  while (i > 0 && h->items[(i-1)/2].key > h->items[i].key) {
+    
+    HeapItem swap = h->items[(i-1)/2];
+    h->items[(i-1)/2] = h->items[i];
+    h->items[i] = swap;
+
+    i = (i-1)/2;
   }
 }

@@ -24,4 +24,6 @@ void free_heap(Heap *h);
 
 // 'Fixes' the heap so that it maintains the heap property
 // a.k.a 'sift-down'.
-void min_heapify(Heap *h, int i);
+void sift_down(Heap *h, int i);
+// 'Sifts up' the heap so that it maintains the heap property
+void sift_up(Heap *h, int i);
